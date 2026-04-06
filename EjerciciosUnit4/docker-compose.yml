@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  getafe:
+    image: postgres:latest
+    container_name: nodo_getafe
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=password123
+      - POSTGRES_DB=universidad_global
+    ports:
+      - "5432:5432"
+    restart: always
